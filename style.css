@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #161627;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+.header__mobile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #404060;
+    cursor: pointer;
+    transition: 0.4s transform linear;
+}
+
+.header__mobile:hover {
+    transform: rotate(50deg);
+
+}
+
+
+.header svg {
+    width: 20px;
+    height: 20px;
+    stroke: #e48935;
+
+}
+
+a {
+    text-decoration: none;
+    color: #e48935;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0, 0, 4);
+    display: none;
+    z-index: 1;
+}
+
+.overlay.active {
+    display: block
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    right: 0;
+    width: 150px;
+    height: calc(50vh - 100px);
+    background-color: #161627;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(100%);
+    transition: 0.4s transform cubic-bezier(.43,.73,0,.98);
+
+
+}
+
+.navbar.active {
+    transform: initial;
+}
+
+.navbar__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.navbar__menu li {
+    margin-bottom: 12px;
+}
+
+.navbar__menu li:last-of-type {
+    margin-bottom: initial;
+}
+
+.navbar__social {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__social li {
+    margin: 0px 8px;
+}
+
+.navbar__social li a {
+    transition: 0.3s opacity ease-in;
+}
+
+.navbar__social li a:hover {
+    opacity: 1;
+}
+
+.navbar__close {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #404060;
+    cursor: pointer;
+    transition: 0.4s transform linear;
+    position: absolute;
+    z-index: 3;
+    top: 15px;
+    right: 15px;
+}
+
+.navbar__close:hover {
+    transform: rotate(10deg);
+
+}
+
+.navbar__close svg {
+    width: 20px;
+    height: 20px;
+    stroke: #e48935;
+}
