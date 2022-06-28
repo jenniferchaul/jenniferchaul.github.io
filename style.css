@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(238, 238, 238);
-    
+
 }
 
 .logo {
@@ -97,12 +97,15 @@ p {
     border: 0.1rem solid #161627;
     padding: 0.3rem;
     background-color: #161627;
+    text-decoration: none;
+    color:#e48935;
 }
 
 .buttons a:hover {
     background-color: #e48935;
     color: #161627;
 }
+
 
 .skills__list {
     display: flex;
@@ -136,11 +139,27 @@ p {
     display: flex;
     justify-content: space-around;
     box-shadow: 0.3rem 0.3rem 0.5rem #777;
+    border-radius:3%;
 }
 
-.project__link a {
-    margin-left: auto;
-    margin-right: auto;
+
+.project__link {
+    display: block;
+    color: #e48935;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+}
+
+.project__link__2 {
+    display: block;
+    color: #e48935;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+
 }
 
 
@@ -173,7 +192,7 @@ p {
 
     }
 
-    a {
+    .navbar__link, .logo  {
         text-decoration: none;
         color: #e48935;
 
