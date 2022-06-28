@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(238, 238, 238);
+    
 }
 
 .logo {
@@ -20,6 +22,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+
 .profil_img {
     height: 5rem;
     width: 5rem;
@@ -31,15 +34,117 @@ body {
     padding: 0.2rem;
 }
 
+#about,
+#skills {
+    margin-bottom: 3rem;
+}
+
 h1 {
     font-family: 'Noto Sans', sans-serif;
     color: #e48935;
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
+    font-size: 2rem;
+}
 
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #161627;
+    font-size: 1.5rem;
 
 }
+
+
+h3 {
+    font-size: 1.1rem;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+
+    color: #161627;
+}
+
+h4 {
+
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #161627;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.3;
+    margin: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    color: #161627;
+}
+
+.buttons {
+    cursor: pointer;
+    margin: 2rem 1rem;
+}
+
+.buttons a {
+    border-radius: 2rem;
+    border: 0.1rem solid #161627;
+    padding: 0.3rem;
+    background-color: #161627;
+}
+
+.buttons a:hover {
+    background-color: #e48935;
+    color: #161627;
+}
+
+.skills__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skillsLogo {
+    height: 4rem;
+    width: 4rem;
+    margin: 1.5rem;
+    color: #e48935;
+
+}
+
+.projects__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.project__item {
+    margin: 1rem 3rem;
+}
+
+
+.project__item img {
+    width: 8rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0.3rem 0.3rem 0.5rem #777;
+}
+
+.project__link a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -173,6 +278,8 @@ h1 {
         height: 20px;
         stroke: #e48935;
     }
+
+
 
 
 }
