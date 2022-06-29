@@ -44,7 +44,8 @@ body {
     padding-bottom: 2rem;
 }
 
-.about__title, .projects__title {
+.about__title,
+.projects__title {
     font-family: 'Noto Sans', sans-serif;
     margin-left: 10%;
     margin-right: 10%;
@@ -61,13 +62,13 @@ body {
     padding-bottom: 3rem;
 }
 
-.skills__title  {
+.skills__title {
     font-family: 'Noto Sans', sans-serif;
     color: rgb(238, 238, 238);
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
-    font-size: 2rem; 
+    font-size: 2rem;
     padding-top: 2rem;
 }
 
@@ -89,7 +90,7 @@ h1 {
     color: rgb(238, 238, 238);
     font-size: 1.5rem;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0.6rem;
 
 }
 
@@ -102,7 +103,6 @@ h3 {
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
-
     color: #161627;
 }
 
@@ -182,55 +182,53 @@ h4 {
 }
 
 
+
+
 .project__link {
-    display: block;
-    color: #e48935;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     margin-top: 1rem;
-    margin-left: 1rem;
+font-weight: bold;
 
 }
 
-
-
-.project__link__2 {
-    display: block;
+.project__link__item {
     color: #e48935;
     text-decoration: none;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    margin-right: 1rem;
 
 }
+
 
 .mail {
     display: block;
     color: #e48935;
     text-decoration: none;
     display: flex;
-    justify-content:center;
-    font-size: 1.5rem;
+    justify-content: center;
+    font-size: 1.2rem;
 
 }
 
 .social__media {
     display: flex;
-    justify-content:center;
-    margin: 0.5rem 1rem;
+    justify-content: space-around;
+    margin: 0rem 1rem;
 }
 
 
 .social_media_link {
     margin: 1rem;
-    padding: 0.8rem;
+    padding: 0.6rem;
     background-color: #e48935;
-    border-radius: 50%;
+    border-radius: 70%;
 
 }
 
 .social_media_link i {
-    font-size: 1.8rem;
-    color: rgb(238, 238, 238);;
+    font-size: 1.6rem;
+    color: rgb(238, 238, 238);
+    ;
     ;
 }
 
@@ -243,6 +241,8 @@ footer {
 .copyright {
     color: #e48935;
     text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 
