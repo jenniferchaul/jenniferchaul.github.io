@@ -8,7 +8,10 @@ body {
 .logo {
     font-family: 'Dancing Script', cursive;
     font-size: xx-large;
+    text-decoration: none;
+    color: #e48935;
 }
+
 
 
 .header {
@@ -23,6 +26,9 @@ body {
 }
 
 
+
+
+
 .profil_img {
     height: 5rem;
     width: 5rem;
@@ -34,9 +40,35 @@ body {
     padding: 0.2rem;
 }
 
-#about,
+#about {
+    padding-bottom: 2rem;
+}
+
+.about__title, .projects__title {
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    color: #161627;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
 #skills {
+    background-color: #161627;
     margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
+
+.skills__title  {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(238, 238, 238);
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-size: 2rem; 
+    padding-top: 2rem;
 }
 
 h1 {
@@ -46,17 +78,22 @@ h1 {
     margin-right: 20%;
     text-align: center;
     font-size: 2rem;
+    padding-top: 2rem;
 }
 
-h2 {
+.contact__title {
     font-family: 'Noto Sans', sans-serif;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
-    color: #161627;
+    color: rgb(238, 238, 238);
     font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
 
 }
+
+
 
 
 h3 {
@@ -79,26 +116,28 @@ h4 {
     color: #161627;
 }
 
-p {
+.about__part {
     text-align: justify;
     line-height: 1.3;
-    margin: 1rem;
+    margin: 3rem 1rem;
     font-family: 'Noto Sans', sans-serif;
     color: #161627;
 }
 
 .buttons {
     cursor: pointer;
-    margin: 2rem 1rem;
+    margin: 4rem 1rem;
 }
 
 .buttons a {
     border-radius: 2rem;
     border: 0.1rem solid #161627;
-    padding: 0.3rem;
+    padding: 0.8rem;
     background-color: #161627;
     text-decoration: none;
-    color:#e48935;
+    color: #e48935;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .buttons a:hover {
@@ -134,12 +173,12 @@ p {
 
 
 .project__item img {
-    width: 8rem;
-    height: 10rem;
+    width: 12rem;
+    height: 14rem;
     display: flex;
     justify-content: space-around;
     box-shadow: 0.3rem 0.3rem 0.5rem #777;
-    border-radius:3%;
+    border-radius: 3%;
 }
 
 
@@ -152,6 +191,8 @@ p {
 
 }
 
+
+
 .project__link__2 {
     display: block;
     color: #e48935;
@@ -162,7 +203,47 @@ p {
 
 }
 
+.mail {
+    display: block;
+    color: #e48935;
+    text-decoration: none;
+    display: flex;
+    justify-content:center;
+    font-size: 1.5rem;
 
+}
+
+.social__media {
+    display: flex;
+    justify-content:center;
+    margin: 0.5rem 1rem;
+}
+
+
+.social_media_link {
+    margin: 1rem;
+    padding: 0.8rem;
+    background-color: #e48935;
+    border-radius: 50%;
+
+}
+
+.social_media_link i {
+    font-size: 1.8rem;
+    color: rgb(238, 238, 238);;
+    ;
+}
+
+
+footer {
+    background-color: #161627;
+    padding: 1rem;
+}
+
+.copyright {
+    color: #e48935;
+    text-align: center;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -192,7 +273,8 @@ p {
 
     }
 
-    .navbar__link, .logo  {
+    .navbar__link,
+    .logo {
         text-decoration: none;
         color: #e48935;
 
@@ -298,7 +380,12 @@ p {
         stroke: #e48935;
     }
 
+}
 
+@media screen and (min-width: 769px) {
 
+    .croix {
+        display: none;
+    }
 
 }
