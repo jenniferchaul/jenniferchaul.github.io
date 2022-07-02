@@ -125,21 +125,18 @@ h4 {
     color: #161627;
 }
 
-.buttons {
-    cursor: pointer;
-    margin: 4rem 1rem;
+.profil_img {
+    height: 5rem;
+    width: 5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.1rem solid #e48935;
+    border-radius: 50%;
+    padding: 0.2rem;
 }
 
-.buttons a {
-    border-radius: 2rem;
-    border: 0.1rem solid #161627;
-    padding: 0.8rem;
-    background-color: #161627;
-    text-decoration: none;
-    color: #e48935;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
+
 
 .buttons a:hover {
     background-color: #e48935;
@@ -213,7 +210,7 @@ h4 {
 
 .social__media {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0rem 1rem;
 }
 
@@ -397,6 +394,22 @@ footer {
         display: none;
     }
 
+    .buttons {
+        cursor: pointer;
+        margin: 4rem 1rem;
+    }
+    
+    .buttons a {
+        border-radius: 2rem;
+        border: 0.1rem solid #161627;
+        padding: 0.8rem;
+        background-color: #161627;
+        text-decoration: none;
+        color: #e48935;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
 }
 
 @media screen and (min-width: 769px) {
@@ -443,6 +456,53 @@ footer {
         color: #e48935;
     }
 
+    .about__integral {
+        display: flex;
+        justify-content:space-around;
+    }
 
+    .about__desktop__title {
+        margin-left: 10rem;
+    }
+
+    .about__part {
+        margin-left: 21rem;
+        margin-right: 27rem;
+        margin-top: 10rem;
+        font-size: 1.5rem;
+    }
+
+    .profil_img {
+        height: 10rem;
+        width: 10rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0.1rem solid #e48935;
+        border-radius: 50%;
+        padding: 0.2rem;
+    }
+
+    .buttons {
+        cursor: pointer;
+        margin: 4rem 1rem;
+        display: flex;
+        justify-content: center;
+    }
     
+    .buttons a {
+        border-radius: 2rem;
+        border: 0.1rem solid #161627;
+        padding: 0.8rem;
+        background-color: #161627;
+        text-decoration: none;
+        color: #e48935;
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 1rem;
+    }
+
+    .navbar__link:hover {
+        color: white;
+    }
 }
