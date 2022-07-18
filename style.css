@@ -54,7 +54,7 @@ body {
     color: #161627;
     font-size: 1.5rem;
     margin-top: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 #skills {
@@ -158,6 +158,10 @@ h4 {
 
 }
 
+#projects {
+    margin-bottom: 3rem;
+}
+
 .projects__list {
     display: flex;
     justify-content: center;
@@ -167,17 +171,25 @@ h4 {
 
 .project__item {
     margin: 1rem 3rem;
+    border: 0.1rem solid #777;
+    box-shadow: 0.3rem 0.3rem 0.5rem #161627;
+    border-radius: 3%;
+    padding-bottom: 1rem;
+}
+
+.project__item:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
 }
 
 
 .project__item img {
-    width: 12rem;
-    height: 14rem;
+    width: 18rem;
+    height: 20rem;
     display: flex;
     justify-content: space-around;
-    box-shadow: 0.3rem 0.3rem 0.5rem #777;
-    border-radius: 3%;
+
 }
+
 
 
 
@@ -242,6 +254,7 @@ footer {
     margin-bottom: 0;
     margin-top: 0;
 }
+
 
 
 @media screen and (max-width: 768px) {
@@ -398,7 +411,7 @@ footer {
         cursor: pointer;
         margin: 4rem 1rem;
     }
-    
+
     .buttons a {
         border-radius: 2rem;
         border: 0.1rem solid #161627;
@@ -437,20 +450,21 @@ footer {
         justify-content: space-between;
         align-items: center;
         padding: 0 1.5rem;
-        background-color:#161627
-
+        background-color: #161627
     }
 
 
-    .navbar__desktop__menu, .navbar__desktop_social_media {
+    .navbar__desktop__menu,
+    .navbar__desktop_social_media {
         display: flex;
         font-size: 1.5rem;
         list-style: none;
-        
+
 
     }
 
-    .navbar__desktop__menu a, .navbar__desktop_social_media a {
+    .navbar__desktop__menu a,
+    .navbar__desktop_social_media a {
         text-decoration: none;
         padding: 0 10px;
         color: #e48935;
@@ -458,7 +472,7 @@ footer {
 
     .about__integral {
         display: flex;
-        justify-content:space-around;
+        justify-content: space-around;
     }
 
     .about__desktop__title {
@@ -489,7 +503,7 @@ footer {
         display: flex;
         justify-content: center;
     }
-    
+
     .buttons a {
         border-radius: 2rem;
         border: 0.1rem solid #161627;
