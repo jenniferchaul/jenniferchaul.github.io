@@ -1,3 +1,5 @@
+<?php include "mail.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +24,11 @@
 </head>
 
 <body>
+
+    <div class="btn">
+        <img src="assets/images/arrow-alt-circle-up-solid.svg" alt="" class="icone">
+
+    </div>
 
     <header class="header">
 
@@ -250,13 +257,14 @@
     <section id="formulaire">
 
         <form action="mail.php" method="post">
-            <div>
-                <input type="text" name="surname" placeholder="Nom" autocomplete="off" class="form-control" />
-                <input type="text" name="firstname" placeholder="Prénom" autocomplete="off" class="form-control" />
-            </div>
-            <input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control"/>
-            <textarea name="message" placeholder="Votre message" class="form-control"></textarea>
-            <button type="submit" class="btn btn-lg btn-primary">Envoyer</button>
+
+            <input type="text" name="name" placeholder="Your name">
+
+            <input type="email" name="email" placeholder="Your email">
+
+            <textarea name="message" placeholder="Write something" style="height:200px"></textarea>
+
+            <button type="submit">Submit</button>
         </form>
 
 
